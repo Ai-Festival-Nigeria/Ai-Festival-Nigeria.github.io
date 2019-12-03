@@ -34,5 +34,3 @@ Ai Fest ng is proudly brought to you by the organizers of Port Harcourt School o
 
 We have the best speakers in the industry, who will share their uniques insights to help our attendees leave with a plan for the future and also we will have the Ai startups– established and emerging to showcase your products– in gamda style, with an amazing array of competitions, grants and boot camp features to keep everyone energized for the future.
 
-
-
