@@ -94,3 +94,92 @@ li a:hover:not(.active) {
     line-height: 2.5;
     font-size: 48px;
 }
+
+/* subscribe section and footer*/
+.exhibition{
+    width: 90%;
+    margin: 0 auto;
+    padding: 30px 0;
+
+    .subscribe{
+        font-style: normal;
+        font-size: $font-size-19;
+        line-height: $line-height-24;
+        width: 40%;
+
+        .sub_text{
+            width: 170px;
+            margin-left: 70px;
+            margin-top: -45px;
+        }
+        .sub{
+            font-size: 23px;
+            color: $dark;
+            font-weight: bold;
+        }
+
+        p{
+            width: 280px;
+            line-height: 24px;
+            margin-top: 30px;
+            color: $gray;
+        }
+
+        input{
+            width: 280px;
+            height: 44px;
+            background: $white;
+            border: 1px solid rgba(31, 32, 65, 0.25);
+            box-sizing: border-box;
+            border-radius: 4px;
+            margin: 30px 0;
+            text-align: center;
+        }
+    
+    }
+    .exhibit{
+        background: $blue;
+        float: right;
+        min-height: 200px;
+        width: 60%;
+        text-align: center;
+        padding: 40px 0;
+
+        .call{
+            color: $white;
+            width: 671px;
+            font-style: normal;
+            font-weight: 800;
+            font-size: 48px;
+            line-height: 72px;
+            text-align: center;
+        }
+        button{
+            width: 280px;
+            height: 44px;
+            margin: 30px 0;
+            border-radius: 30px;
+            background: $white;
+            border: none;
+        }
+    }
+}
+.footer{
+    text-align: center !important;
+    width: 100%; 
+    margin: 70px 0;
+    font-style: normal;
+    font-weight: normal;
+    line-height: $line-height-24;
+
+    p{
+        width: 560px;
+        font-size: 14px;
+        margin: 0 auto;
+        color: $gray;
+    }
+
+    .icon img{
+        margin: 20px 10px;
+    }
+}
