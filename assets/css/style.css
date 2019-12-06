@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins";
+}
+
+#navbar {
+  height: 55px;
+  display: flex;
+  background-color: #ffffff;
+  justify-content: space-between;
+}
+
+#navbar > div {
+  width: 33.33%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  color: grey;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  color: #132D7D;
+}
+
+#subscribeIcon > img {
+  padding: 5px 10px;
+}
+
+#ball {
+  margin-right: 10px;
+}
+
+#get-in-touch {
+  font-size: 12px;
+  background-color: #132D7D;
+  display: inline-block;
+  padding: 0.8em 2em;
+  border-radius: 2em;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  font-weight: 300;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+#main {
+  height: 700px;
+  background-image: url("../images/background.png");
+  background-size: 100% 100%;
+}
+
+#sub-main {
+  background-color: #132d7dc2;
+  height: 100%;
+}
+
+#sub-main-details {
+  font-size: 90px;
+  color: #f0efff;
+  padding: 150px 100px;
+  font-weight: bolder;
+  line-height: 1.18;
+}
+
+#sub-main-details-small {
+  line-height: 2.5;
+  font-size: 48px;
+}
+
+/*# sourceMappingURL=style.css.map */
