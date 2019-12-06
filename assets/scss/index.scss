@@ -179,7 +179,14 @@ li a:hover:not(.active) {
         color: $gray;
     }
 
-    .icon img{
+    .icon .fa{
         margin: 20px 10px;
+        font-size: 24px;
+        text-decoration: none;
+        color: rgb(188,156,255);
+
+        &:hover{
+            color: #8BA4F9;
+        }
     }
 }
