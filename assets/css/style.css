@@ -4,9 +4,10 @@
 }
 
 body {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
 }
 
+/*navbar and intro*/
 #navbar {
   height: 55px;
   display: flex;
@@ -94,6 +95,48 @@ li a:hover:not(.active) {
   font-size: 48px;
 }
 
+/* what goes on section */
+.card-img-top {
+  height: 50px;
+  width: 50px;
+  margin: 10px auto 10px auto;
+}
+
+.card-img-top1 {
+  height: 30px;
+  width: 30px;
+  margin: 2px;
+}
+
+.card-body {
+  text-align: center;
+  margin: 10px;
+}
+
+.card-text {
+  padding: 10px 50px 10px 50px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-title {
+  font-weight: bolder;
+}
+
+.what-goes-on {
+  margin-left: 40px;
+}
+
+#col {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 7%;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
 /* subscribe section and footer*/
 .exhibition {
   width: 90%;
@@ -172,8 +215,14 @@ li a:hover:not(.active) {
   margin: 0 auto;
   color: rgba(31, 32, 65, 0.75);
 }
-.footer .icon img {
+.footer .icon .fa {
   margin: 20px 10px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #bc9cff;
+}
+.footer .icon .fa:hover {
+  color: #8BA4F9;
 }
 
 /*# sourceMappingURL=style.css.map */
