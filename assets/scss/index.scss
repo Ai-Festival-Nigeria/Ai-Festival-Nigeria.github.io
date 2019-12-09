@@ -9,98 +9,138 @@ body {
 }
 
 /*navbar and intro*/
-#navbar {
+.navbar {
     height: 55px;
     display: flex;
     background-color: $white;
     justify-content: space-between;
+
+    .navbar div {
+        width: 33.33%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+
+        li {
+            float: left;
+        }
+    
+        li a {
+            padding: 5px 10px;
+            text-decoration: none;
+            text-align: center;
+            display: block;
+            color: grey;
+        }
+    
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+    }
+
+    .active {
+        color: $blue;
+    }
+
+    #iconImage{
+        margin: 0 auto;
+    }
+    #subscribeIcon img {
+        padding: 5px 10px;
+        margin: 0 5px;
+    }
+
+    #ball {
+        margin-right: 10px;
+    }
+
+    #get-in-touch {
+        font-size: 12px;
+        background-color: $blue;
+        display: inline-block;
+        padding: 0.8em 2.0em;
+        border-radius: 2em;
+        box-sizing: border-box;
+        border: none;
+        text-decoration: none;
+        font-weight: 300;
+        color: #FFFFFF;
+        text-align: center;
+    }
 }
 
-#navbar>div {
-    width: 33.33%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-}
-
-li {
-    float: left;
-}
-
-li a {
-    padding: 5px 10px;
-    text-decoration: none;
-    text-align: center;
-    display: block;
-    color: grey;
-}
-
-li a:hover:not(.active) {
-    background-color: #111;
-}
-
-.active {
-    color: $blue;
-}
-
-#subscribeIcon>img {
-    padding: 5px 10px;
-}
-
-#ball {
-    margin-right: 10px;
-}
-
-#get-in-touch {
-    font-size: 12px;
-    background-color: $blue;
-    display: inline-block;
-    padding: 0.8em 2.0em;
-    border-radius: 2em;
-    box-sizing: border-box;
-    border: none;
-    text-decoration: none;
-    font-weight: 300;
-    color: #FFFFFF;
-    text-align: center;
-}
 
 #main {
-    height: 700px;
+    height: 100%;
+    width: 100%;
     background-image: url("../images/background.png");
     background-size: 100% 100%;
-}
 
-#sub-main {
-    background-color: #132d7dc2;
-    height: 100%;
-}
+    #sub-main {
+        background-color: #132d7dc2;
+        height: 100%;
+        width: 100%;
+    }
 
-#sub-main-details {
-    font-size: 90px;
-    color: #f0efff;
-    padding: 150px 100px;
-    font-weight: bolder;
-    line-height: 1.18;
-}
+    #sub-main-details {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 90px;
+        color: #f0efff;
+        padding: 150px 100px;
+        font-weight: bolder;
+        line-height: 1.18;
 
-#sub-main-details-small {
-    line-height: 2.5;
-    font-size: 48px;
+        @media only screen and (max-width: 890px){
+            font-size: 75px;
+        }
+        @media only screen and (max-width: 748px){
+            font-size: 60px;
+        }
+        @media only screen and (max-width: 644px){
+            font-size: 40px;
+            padding: 100px 50px;
+        }
+    }
+
+    #sub-main-details-small {
+        line-height: 2.5;
+        font-size: 48px;
+
+        @media only screen and (max-width: 644px){
+            font-size: 20px;
+        }
+    }
 }
 
 /* what goes on section */
+.what-goes-on{
+    .card-img-top{
+        height: 100px;
+        width: 30%;
+        margin: 10px auto 10px auto;
+    }
+
+    .col-md-4{
+        margin: 10px 0;
+    }
+
+    .card{
+        border: none;
+        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+    }
+}
 .card-img-top{
     height: 50px;
     width: 50px;
-    margin: 10px auto 10px auto;
+    
 }
 
 .card-img-top1{
@@ -148,7 +188,6 @@ h1{
         font-style: normal;
         font-size: $font-size-19;
         line-height: $line-height-24;
-        width: 40%;
 
         .sub_text{
             width: 170px;
@@ -182,9 +221,7 @@ h1{
     }
     .exhibit{
         background: $blue;
-        float: right;
         min-height: 200px;
-        width: 60%;
         text-align: center;
         padding: 40px 0;
 
@@ -216,7 +253,7 @@ h1{
     line-height: $line-height-24;
 
     p{
-        width: 560px;
+        max-width: 560px;
         font-size: 14px;
         margin: 0 auto;
         color: $gray;
@@ -230,6 +267,7 @@ h1{
 
         &:hover{
             color: #8BA4F9;
+            cursor: pointer;
         }
     }
 }

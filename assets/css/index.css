@@ -8,56 +8,51 @@ body {
 }
 
 /*navbar and intro*/
-#navbar {
+.navbar {
   height: 55px;
   display: flex;
   background-color: #ffffff;
   justify-content: space-between;
 }
-
-#navbar > div {
+.navbar .navbar div {
   width: 33.33%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-ul {
+.navbar ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
-
-li {
+.navbar ul li {
   float: left;
 }
-
-li a {
+.navbar ul li a {
   padding: 5px 10px;
   text-decoration: none;
   text-align: center;
   display: block;
   color: grey;
 }
-
-li a:hover:not(.active) {
+.navbar ul li a:hover:not(.active) {
   background-color: #111;
 }
-
-.active {
+.navbar .active {
   color: #132D7D;
 }
-
-#subscribeIcon > img {
-  padding: 5px 10px;
+.navbar #iconImage {
+  margin: 0 auto;
 }
-
-#ball {
+.navbar #subscribeIcon img {
+  padding: 5px 10px;
+  margin: 0 5px;
+}
+.navbar #ball {
   margin-right: 10px;
 }
-
-#get-in-touch {
+.navbar #get-in-touch {
   font-size: 12px;
   background-color: #132D7D;
   display: inline-block;
@@ -72,34 +67,68 @@ li a:hover:not(.active) {
 }
 
 #main {
-  height: 700px;
+  height: 100%;
+  width: 100%;
   background-image: url("../images/background.png");
   background-size: 100% 100%;
 }
-
-#sub-main {
+#main #sub-main {
   background-color: #132d7dc2;
   height: 100%;
+  width: 100%;
 }
-
-#sub-main-details {
+#main #sub-main-details {
+  width: 100%;
+  margin: 0 auto;
   font-size: 90px;
   color: #f0efff;
   padding: 150px 100px;
   font-weight: bolder;
   line-height: 1.18;
 }
-
-#sub-main-details-small {
+@media only screen and (max-width: 890px) {
+  #main #sub-main-details {
+    font-size: 75px;
+  }
+}
+@media only screen and (max-width: 748px) {
+  #main #sub-main-details {
+    font-size: 60px;
+  }
+}
+@media only screen and (max-width: 644px) {
+  #main #sub-main-details {
+    font-size: 40px;
+    padding: 100px 50px;
+  }
+}
+#main #sub-main-details-small {
   line-height: 2.5;
   font-size: 48px;
 }
+@media only screen and (max-width: 644px) {
+  #main #sub-main-details-small {
+    font-size: 20px;
+  }
+}
 
 /* what goes on section */
+.what-goes-on .card-img-top {
+  height: 100px;
+  width: 30%;
+  margin: 10px auto 10px auto;
+}
+.what-goes-on .col-md-4 {
+  margin: 10px 0;
+}
+.what-goes-on .card {
+  border: none;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+
 .card-img-top {
   height: 50px;
   width: 50px;
-  margin: 10px auto 10px auto;
 }
 
 .card-img-top1 {
@@ -147,7 +176,6 @@ h1 {
   font-style: normal;
   font-size: 19px;
   line-height: 24px;
-  width: 40%;
 }
 .exhibition .subscribe .sub_text {
   width: 170px;
@@ -177,9 +205,7 @@ h1 {
 }
 .exhibition .exhibit {
   background: #132D7D;
-  float: right;
   min-height: 200px;
-  width: 60%;
   text-align: center;
   padding: 40px 0;
 }
@@ -210,7 +236,7 @@ h1 {
   line-height: 24px;
 }
 .footer p {
-  width: 560px;
+  max-width: 560px;
   font-size: 14px;
   margin: 0 auto;
   color: rgba(31, 32, 65, 0.75);
@@ -223,6 +249,7 @@ h1 {
 }
 .footer .icon .fa:hover {
   color: #8BA4F9;
+  cursor: pointer;
 }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
