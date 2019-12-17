@@ -28,6 +28,9 @@ a{
 h1{
     font-weight: bolder;
 }
+.display .row, .what-goes-on .row{
+    margin: 0px !important;
+}
 
 /*navbar and intro*/
 .navbar {
@@ -41,8 +44,9 @@ h1{
             background-color: $white;
             text-align: right;
             float: right;
+            padding: 10px;
 
-            #iconImage, #subscribeIcon{
+            .iconImage{
                 display: none;
             }
         }
@@ -82,10 +86,13 @@ h1{
         color: $blue;
     }
 
-    #iconImage{
-        margin: 0 auto;
+    .iconImage{
+        // margin: 0 auto;
     }
-    #subscribeIcon img {
+    .subscribeIcon{
+        
+    }
+    .subscribeIcon img {
         padding: 5px 10px;
         margin: 0 5px;
     }
@@ -119,44 +126,60 @@ h1{
     background-position: center center;
 
     #sub-main {
-        background-color: #132d7dc2;
+        background-color: $blue;
+        mix-blend-mode: hard-light;
         height: 100%;
         width: 100%;
+        
+        #sub{
+            background: linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
+            mix-blend-mode: hard-light;
+            
+            #sub-main-details {
+                width: 100%;
+                margin: 0 auto;
+                font-size: 90px;
+                color: #f0efff;
+                padding: 150px 100px;
+                font-weight: bolder;
+                line-height: 1.18;
+
+                @media only screen and (max-width: 890px){
+                    font-size: 75px;
+                }
+                @media only screen and (max-width: 748px){
+                    font-size: 60px;
+                }
+                @media only screen and (max-width: 644px){
+                    font-size: 40px;
+                    padding: 100px 50px;
+                }
+
+                #sub-main-details-small {
+                    line-height: 2.5;
+                    font-size: 48px;
+            
+                    @media only screen and (max-width: 644px){
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
     }
 
-    #sub-main-details {
-        width: 100%;
-        margin: 0 auto;
-        font-size: 90px;
-        color: #f0efff;
-        padding: 150px 100px;
-        font-weight: bolder;
-        line-height: 1.18;
-
-        @media only screen and (max-width: 890px){
-            font-size: 75px;
-        }
-        @media only screen and (max-width: 748px){
-            font-size: 60px;
-        }
-        @media only screen and (max-width: 644px){
-            font-size: 40px;
-            padding: 100px 50px;
-        }
-    }
-
-    #sub-main-details-small {
-        line-height: 2.5;
-        font-size: 48px;
-
-        @media only screen and (max-width: 644px){
-            font-size: 20px;
-        }
-    }
 }
 
 /* what goes on section */
 .what-goes-on{
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 900px) and (min-width: 768px){
+        .col-md-4{
+            max-width: 50% !important;
+            flex: 50%;
+        } 
+    }
     .card-img-top{
         height: 100px;
         width: 30%;
@@ -199,16 +222,6 @@ h1{
     font-weight: bolder;
 }
 
-.what-goes-on{
-    margin-left: 40px;
-
-    @media screen and (max-width: 900px) and (min-width: 768px){
-        .col-md-4{
-            max-width: 50% !important;
-            flex: 50%;
-        } 
-    }
-}
 
 /*display section*/
 .display{
@@ -240,7 +253,7 @@ h1{
             text-align: center;
 
             .sub_text{
-                margin: 0px !important;
+                margin: 10px 0 !important;
                 width: 100% !important;
             }
             p{
@@ -297,6 +310,7 @@ h1{
         }
 
         input{
+            color: $gray;
             width: 280px;
             height: 44px;
             background: $white;

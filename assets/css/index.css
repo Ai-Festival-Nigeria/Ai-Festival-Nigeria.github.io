@@ -31,6 +31,10 @@ h1 {
   font-weight: bolder;
 }
 
+.display .row, .what-goes-on .row {
+  margin: 0px !important;
+}
+
 /*navbar and intro*/
 .navbar {
   height: 55px;
@@ -43,8 +47,9 @@ h1 {
     background-color: #ffffff;
     text-align: right;
     float: right;
+    padding: 10px;
   }
-  .navbar .collapse #iconImage, .navbar .collapse #subscribeIcon {
+  .navbar .collapse .iconImage {
     display: none;
   }
 }
@@ -76,10 +81,7 @@ h1 {
 .navbar .active {
   color: #132D7D;
 }
-.navbar #iconImage {
-  margin: 0 auto;
-}
-.navbar #subscribeIcon img {
+.navbar .subscribeIcon img {
   padding: 5px 10px;
   margin: 0 5px;
 }
@@ -109,11 +111,16 @@ h1 {
   background-position: center center;
 }
 #main #sub-main {
-  background-color: #132d7dc2;
+  background-color: #132D7D;
+  mix-blend-mode: hard-light;
   height: 100%;
   width: 100%;
 }
-#main #sub-main-details {
+#main #sub-main #sub {
+  background: linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
+  mix-blend-mode: hard-light;
+}
+#main #sub-main #sub #sub-main-details {
   width: 100%;
   margin: 0 auto;
   font-size: 90px;
@@ -123,32 +130,42 @@ h1 {
   line-height: 1.18;
 }
 @media only screen and (max-width: 890px) {
-  #main #sub-main-details {
+  #main #sub-main #sub #sub-main-details {
     font-size: 75px;
   }
 }
 @media only screen and (max-width: 748px) {
-  #main #sub-main-details {
+  #main #sub-main #sub #sub-main-details {
     font-size: 60px;
   }
 }
 @media only screen and (max-width: 644px) {
-  #main #sub-main-details {
+  #main #sub-main #sub #sub-main-details {
     font-size: 40px;
     padding: 100px 50px;
   }
 }
-#main #sub-main-details-small {
+#main #sub-main #sub #sub-main-details #sub-main-details-small {
   line-height: 2.5;
   font-size: 48px;
 }
 @media only screen and (max-width: 644px) {
-  #main #sub-main-details-small {
+  #main #sub-main #sub #sub-main-details #sub-main-details-small {
     font-size: 20px;
   }
 }
 
 /* what goes on section */
+.what-goes-on {
+  width: 90%;
+  margin: 0 auto;
+}
+@media screen and (max-width: 900px) and (min-width: 768px) {
+  .what-goes-on .col-md-4 {
+    max-width: 50% !important;
+    flex: 50%;
+  }
+}
 .what-goes-on .card-img-top {
   height: 100px;
   width: 30%;
@@ -188,16 +205,6 @@ h1 {
   font-weight: bolder;
 }
 
-.what-goes-on {
-  margin-left: 40px;
-}
-@media screen and (max-width: 900px) and (min-width: 768px) {
-  .what-goes-on .col-md-4 {
-    max-width: 50% !important;
-    flex: 50%;
-  }
-}
-
 /*display section*/
 .display img {
   width: 100%;
@@ -225,7 +232,7 @@ h1 {
     text-align: center;
   }
   .exhibition .subscribe .sub_text {
-    margin: 0px !important;
+    margin: 10px 0 !important;
     width: 100% !important;
   }
   .exhibition .subscribe p {
@@ -275,6 +282,7 @@ h1 {
   color: rgba(31, 32, 65, 0.75);
 }
 .exhibition .subscribe input {
+  color: rgba(31, 32, 65, 0.75);
   width: 280px;
   height: 44px;
   background: #ffffff;
