@@ -7,6 +7,24 @@
 body {
     font-family: $font;
 }
+.blue{
+    background: $blue;
+    color: $white;
+}
+.white{
+    background: $white;
+    color: $blue;
+}
+
+#col{
+    margin-top: 10%;
+    margin-bottom: 5%;
+    margin-left: 7%;
+}
+
+h1{
+    font-weight: bolder;
+}
 
 /*navbar and intro*/
 .navbar {
@@ -15,6 +33,17 @@ body {
     background-color: $white;
     justify-content: space-between;
 
+    @media screen and (max-width: 991px){
+        .collapse{
+            background-color: $white;
+            text-align: right;
+            float: right;
+
+            #iconImage, #subscribeIcon{
+                display: none;
+            }
+        }
+    }
     .navbar div {
         width: 33.33%;
         display: flex;
@@ -81,7 +110,9 @@ body {
     height: 100%;
     width: 100%;
     background-image: url("../images/background.png");
-    background-size: 100% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 
     #sub-main {
         background-color: #132d7dc2;
@@ -166,16 +197,25 @@ body {
 
 .what-goes-on{
     margin-left: 40px;
+
+    @media screen and (max-width: 900px) and (min-width: 768px){
+        .col-md-4{
+            max-width: 50% !important;
+            flex: 50%;
+        } 
+    }
 }
 
-#col{
-    margin-top: 10%;
-    margin-bottom: 5%;
-    margin-left: 7%;
-}
-
-h1{
-    font-weight: bolder;
+/*display section*/
+.display{
+    img{
+        width: 100%;
+    }
+    p{
+        color: $blue;
+        padding: 20px;
+        text-align: center;
+    }
 }
 
 /* subscribe section and footer*/
@@ -184,6 +224,46 @@ h1{
     margin: 0 auto;
     padding: 30px 0;
 
+    @media screen and (max-width: 970px){
+        .col-md-4, .col-md-8{
+            max-width: 100%;
+            flex: 100%;
+        }
+
+        .subscribe{
+            width: 80% !important;
+            margin: 0 auto;
+            text-align: center;
+
+            .sub_text{
+                margin: 0px !important;
+                width: 100% !important;
+            }
+            p{
+                width: 100% !important;
+            }
+        }
+    }
+
+    .date{
+        margin-top: 30px;
+        text-align: center;
+
+        p{
+            font-size: 36px;
+            font-weight: 800;
+            position: center center;
+            padding-top: 20px;
+        }
+    }
+
+    button{
+        width: 280px;
+        height: 44px;
+        margin: 30px 0;
+        border-radius: 30px;
+        border: none;
+    }
     .subscribe{
         font-style: normal;
         font-size: $font-size-19;
@@ -214,33 +294,37 @@ h1{
             border: 1px solid rgba(31, 32, 65, 0.25);
             box-sizing: border-box;
             border-radius: 4px;
-            margin: 30px 0;
+            margin: 10px 0;
             text-align: center;
+        }
+
+        .volunteers{
+            text-align: center;
+            padding: 30px 0;
+
+            .call{
+                font-size: 36px;
+                font-weight: 800;
+                line-height: 54px;
+            }
+            p{
+                color: $white;
+            }
         }
     
     }
     .exhibit{
-        background: $blue;
         min-height: 200px;
         text-align: center;
         padding: 40px 0;
 
         .call{
-            color: $white;
             width: 671px;
             font-style: normal;
             font-weight: 800;
             font-size: 48px;
             line-height: 72px;
             text-align: center;
-        }
-        button{
-            width: 280px;
-            height: 44px;
-            margin: 30px 0;
-            border-radius: 30px;
-            background: $white;
-            border: none;
         }
     }
 }

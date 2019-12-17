@@ -7,12 +7,42 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.blue {
+  background: #132D7D;
+  color: #ffffff;
+}
+
+.white {
+  background: #ffffff;
+  color: #132D7D;
+}
+
+#col {
+  margin-top: 10%;
+  margin-bottom: 5%;
+  margin-left: 7%;
+}
+
+h1 {
+  font-weight: bolder;
+}
+
 /*navbar and intro*/
 .navbar {
   height: 55px;
   display: flex;
   background-color: #ffffff;
   justify-content: space-between;
+}
+@media screen and (max-width: 991px) {
+  .navbar .collapse {
+    background-color: #ffffff;
+    text-align: right;
+    float: right;
+  }
+  .navbar .collapse #iconImage, .navbar .collapse #subscribeIcon {
+    display: none;
+  }
 }
 .navbar .navbar div {
   width: 33.33%;
@@ -70,7 +100,9 @@ body {
   height: 100%;
   width: 100%;
   background-image: url("../images/background.png");
-  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 #main #sub-main {
   background-color: #132d7dc2;
@@ -155,15 +187,21 @@ body {
 .what-goes-on {
   margin-left: 40px;
 }
-
-#col {
-  margin-top: 10%;
-  margin-bottom: 5%;
-  margin-left: 7%;
+@media screen and (max-width: 900px) and (min-width: 768px) {
+  .what-goes-on .col-md-4 {
+    max-width: 50% !important;
+    flex: 50%;
+  }
 }
 
-h1 {
-  font-weight: bolder;
+/*display section*/
+.display img {
+  width: 100%;
+}
+.display p {
+  color: #132D7D;
+  padding: 20px;
+  text-align: center;
 }
 
 /* subscribe section and footer*/
@@ -171,6 +209,41 @@ h1 {
   width: 90%;
   margin: 0 auto;
   padding: 30px 0;
+}
+@media screen and (max-width: 970px) {
+  .exhibition .col-md-4, .exhibition .col-md-8 {
+    max-width: 100%;
+    flex: 100%;
+  }
+  .exhibition .subscribe {
+    width: 80% !important;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .exhibition .subscribe .sub_text {
+    margin: 0px !important;
+    width: 100% !important;
+  }
+  .exhibition .subscribe p {
+    width: 100% !important;
+  }
+}
+.exhibition .date {
+  margin-top: 30px;
+  text-align: center;
+}
+.exhibition .date p {
+  font-size: 36px;
+  font-weight: 800;
+  position: center center;
+  padding-top: 20px;
+}
+.exhibition button {
+  width: 280px;
+  height: 44px;
+  margin: 30px 0;
+  border-radius: 30px;
+  border: none;
 }
 .exhibition .subscribe {
   font-style: normal;
@@ -200,31 +273,33 @@ h1 {
   border: 1px solid rgba(31, 32, 65, 0.25);
   box-sizing: border-box;
   border-radius: 4px;
-  margin: 30px 0;
+  margin: 10px 0;
   text-align: center;
 }
+.exhibition .subscribe .volunteers {
+  text-align: center;
+  padding: 30px 0;
+}
+.exhibition .subscribe .volunteers .call {
+  font-size: 36px;
+  font-weight: 800;
+  line-height: 54px;
+}
+.exhibition .subscribe .volunteers p {
+  color: #ffffff;
+}
 .exhibition .exhibit {
-  background: #132D7D;
   min-height: 200px;
   text-align: center;
   padding: 40px 0;
 }
 .exhibition .exhibit .call {
-  color: #ffffff;
   width: 671px;
   font-style: normal;
   font-weight: 800;
   font-size: 48px;
   line-height: 72px;
   text-align: center;
-}
-.exhibition .exhibit button {
-  width: 280px;
-  height: 44px;
-  margin: 30px 0;
-  border-radius: 30px;
-  background: #ffffff;
-  border: none;
 }
 
 .footer {
