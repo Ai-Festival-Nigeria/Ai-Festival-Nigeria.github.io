@@ -41,8 +41,9 @@ h1{
             background-color: $white;
             text-align: right;
             float: right;
+            padding: 10px;
 
-            #iconImage, #subscribeIcon{
+            .iconImage{
                 display: none;
             }
         }
@@ -82,10 +83,13 @@ h1{
         color: $blue;
     }
 
-    #iconImage{
-        margin: 0 auto;
+    .iconImage{
+        // margin: 0 auto;
     }
-    #subscribeIcon img {
+    .subscribeIcon{
+        
+    }
+    .subscribeIcon img {
         padding: 5px 10px;
         margin: 0 5px;
     }
@@ -240,7 +244,7 @@ h1{
             text-align: center;
 
             .sub_text{
-                margin: 0px !important;
+                margin: 10px 0 !important;
                 width: 100% !important;
             }
             p{
@@ -297,6 +301,7 @@ h1{
         }
 
         input{
+            color: $gray;
             width: 280px;
             height: 44px;
             background: $white;
