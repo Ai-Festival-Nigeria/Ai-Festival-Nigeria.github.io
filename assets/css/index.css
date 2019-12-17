@@ -17,6 +17,10 @@ body {
   color: #132D7D;
 }
 
+a {
+  text-decoration: none;
+}
+
 #col {
   margin-top: 10%;
   margin-bottom: 5%;
@@ -66,8 +70,8 @@ h1 {
   display: block;
   color: grey;
 }
-.navbar ul li a:hover:not(.active) {
-  background-color: #111;
+.navbar ul li a:hover {
+  color: #132D7D;
 }
 .navbar .active {
   color: #132D7D;
@@ -239,11 +243,15 @@ h1 {
   padding-top: 20px;
 }
 .exhibition button {
+  font-size: 16px;
   width: 280px;
   height: 44px;
   margin: 30px 0;
   border-radius: 30px;
   border: none;
+}
+.exhibition button i {
+  margin-left: 10px;
 }
 .exhibition .subscribe {
   font-style: normal;
@@ -287,6 +295,7 @@ h1 {
 }
 .exhibition .subscribe .volunteers p {
   color: #ffffff;
+  margin: 0 auto;
 }
 .exhibition .exhibit {
   min-height: 200px;
