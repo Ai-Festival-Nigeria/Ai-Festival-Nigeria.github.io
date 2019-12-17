@@ -28,6 +28,9 @@ a{
 h1{
     font-weight: bolder;
 }
+.display .row, .what-goes-on .row{
+    margin: 0px !important;
+}
 
 /*navbar and intro*/
 .navbar {
@@ -168,6 +171,15 @@ h1{
 
 /* what goes on section */
 .what-goes-on{
+    width: 90%;
+    margin: 0 auto;
+
+    @media screen and (max-width: 900px) and (min-width: 768px){
+        .col-md-4{
+            max-width: 50% !important;
+            flex: 50%;
+        } 
+    }
     .card-img-top{
         height: 100px;
         width: 30%;
@@ -210,16 +222,6 @@ h1{
     font-weight: bolder;
 }
 
-.what-goes-on{
-    margin-left: 40px;
-
-    @media screen and (max-width: 900px) and (min-width: 768px){
-        .col-md-4{
-            max-width: 50% !important;
-            flex: 50%;
-        } 
-    }
-}
 
 /*display section*/
 .display{
