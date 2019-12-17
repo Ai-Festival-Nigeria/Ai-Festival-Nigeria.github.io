@@ -107,11 +107,16 @@ h1 {
   background-position: center center;
 }
 #main #sub-main {
-  background-color: #132d7dc2;
+  background-color: #132D7D;
+  mix-blend-mode: hard-light;
   height: 100%;
   width: 100%;
 }
-#main #sub-main-details {
+#main #sub-main #sub {
+  background: linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
+  mix-blend-mode: hard-light;
+}
+#main #sub-main #sub #sub-main-details {
   width: 100%;
   margin: 0 auto;
   font-size: 90px;
@@ -121,27 +126,27 @@ h1 {
   line-height: 1.18;
 }
 @media only screen and (max-width: 890px) {
-  #main #sub-main-details {
+  #main #sub-main #sub #sub-main-details {
     font-size: 75px;
   }
 }
 @media only screen and (max-width: 748px) {
-  #main #sub-main-details {
+  #main #sub-main #sub #sub-main-details {
     font-size: 60px;
   }
 }
 @media only screen and (max-width: 644px) {
-  #main #sub-main-details {
+  #main #sub-main #sub #sub-main-details {
     font-size: 40px;
     padding: 100px 50px;
   }
 }
-#main #sub-main-details-small {
+#main #sub-main #sub #sub-main-details #sub-main-details-small {
   line-height: 2.5;
   font-size: 48px;
 }
 @media only screen and (max-width: 644px) {
-  #main #sub-main-details-small {
+  #main #sub-main #sub #sub-main-details #sub-main-details-small {
     font-size: 20px;
   }
 }
