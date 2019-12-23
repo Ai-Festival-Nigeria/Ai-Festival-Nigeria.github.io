@@ -41,6 +41,7 @@ h1 {
   display: flex;
   background-color: #ffffff;
   justify-content: space-between;
+  z-index: 1;
 }
 @media screen and (max-width: 991px) {
   .navbar .collapse {
@@ -111,14 +112,14 @@ h1 {
   background-position: center center;
 }
 #main #sub-main {
-  background-color: #132D7D;
+  background-color: #081338;
   mix-blend-mode: hard-light;
   height: 100%;
   width: 100%;
 }
 #main #sub-main #sub {
-  background: linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
-  mix-blend-mode: hard-light;
+  background: linear-gradient(90deg, #29064e 0%, rgba(196, 196, 196, 0) 56.77%);
+  mix-blend-mode: luminosity;
 }
 #main #sub-main #sub #sub-main-details {
   width: 100%;
@@ -166,42 +167,37 @@ h1 {
     flex: 50%;
   }
 }
-.what-goes-on .card-img-top {
-  height: 100px;
-  width: 30%;
-  margin: 10px auto 10px auto;
-}
-.what-goes-on .col-md-4 {
-  margin: 10px 0;
-}
-.what-goes-on .card {
-  border: none;
-  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-}
-
-.card-img-top {
-  height: 50px;
-  width: 50px;
-}
-
-.card-img-top1 {
+.what-goes-on .card-img-top1 {
   height: 30px;
   width: 30px;
   margin: 2px;
 }
-
-.card-body {
+.what-goes-on .col-md-4 {
+  margin: 10px 0;
+}
+.what-goes-on .col-md-4 .card-img-top {
+  height: 100px;
+  width: 30%;
+  margin: 10px auto 10px auto;
+}
+.what-goes-on .col-md-4 .card {
+  border: none;
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+}
+.what-goes-on .col-md-4 .card-img-top {
+  height: 50px;
+  width: 50px;
+}
+.what-goes-on .col-md-4 .card-body {
   text-align: center;
   margin: 10px;
 }
-
-.card-text {
-  padding: 10px 50px 10px 50px;
+.what-goes-on .col-md-4 .card-text {
+  padding: 10px;
   font-size: 18px;
   font-weight: 500;
 }
-
-.card-title {
+.what-goes-on .col-md-4 .card-title {
   font-weight: bolder;
 }
 

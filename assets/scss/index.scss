@@ -38,6 +38,7 @@ h1{
     display: flex;
     background-color: $white;
     justify-content: space-between;
+    z-index: 1;
 
     @media screen and (max-width: 991px){
         .collapse{
@@ -126,14 +127,14 @@ h1{
     background-position: center center;
 
     #sub-main {
-        background-color: $blue;
+        background-color: #081338;
         mix-blend-mode: hard-light;
         height: 100%;
         width: 100%;
         
         #sub{
-            background: linear-gradient(90deg, #5E239D 0%, rgba(196, 196, 196, 0) 56.77%);
-            mix-blend-mode: hard-light;
+            background: linear-gradient(90deg, #29064e 0%, rgba(196, 196, 196, 0) 56.77%);
+            mix-blend-mode: luminosity;
             
             #sub-main-details {
                 width: 100%;
@@ -180,48 +181,52 @@ h1{
             flex: 50%;
         } 
     }
-    .card-img-top{
-        height: 100px;
-        width: 30%;
-        margin: 10px auto 10px auto;
-    }
 
+    .card-img-top1{
+        height: 30px;
+        width: 30px;
+        margin: 2px;
+    }
     .col-md-4{
         margin: 10px 0;
+
+        .card-img-top{
+            height: 100px;
+            width: 30%;
+            margin: 10px auto 10px auto;
+        }
+
+        .card{
+            border: none;
+            box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+        }
+
+        .card-img-top{
+            height: 50px;
+            width: 50px;
+            
+        }
+        
+        .card-body{
+            text-align: center;
+            margin: 10px;
+        }
+        
+        .card-text{
+            padding: 10px;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        
+        .card-title{
+            font-weight: bolder;
+        }
+        
+        
     }
 
-    .card{
-        border: none;
-        box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
-    }
-}
-.card-img-top{
-    height: 50px;
-    width: 50px;
     
 }
-
-.card-img-top1{
-    height: 30px;
-    width: 30px;
-    margin: 2px;
-}
-
-.card-body{
-    text-align: center;
-    margin: 10px;
-}
-
-.card-text{
-    padding: 10px 50px 10px 50px;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.card-title{
-    font-weight: bolder;
-}
-
 
 /*display section*/
 .display{
