@@ -10,7 +10,7 @@
 		<div class="collapse navbar-collapse" id="navbarsExample03">
 			<ul id="snav" class="navbar-nav ml-auto">
 				<li class="nav-item mr-5">
-					<a class="nav-link" href="case-studies">Volunteer</a>
+					<a class="nav-link" href="#">Volunteer</a>
 				</li>
 				<li class="nav-item">
 					<a href="#" class="btn btn-primary">Register</a>
