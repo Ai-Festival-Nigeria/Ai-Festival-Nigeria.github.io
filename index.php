@@ -52,7 +52,7 @@
 	<body>
 		<?php include "include/header.php"?>
 
-		<section id="intro" class="bg-ai-blue">
+		<section id="intro" class="bg-ai-green">
 			<div class="container">
 				<div class="row align-items-end">
 					<div class="col-12 col-lg-7 hero-text">
@@ -74,7 +74,7 @@
 		</section>
 
 		<!-- Event philosophy Section  -->
-		<section id="eventPhilosophy" class="section-padding bg-ai-dblue">
+		<section id="eventPhilosophy" class="section-padding bg-ai-dgreen">
 			<div class="container">
 				<div class="row">
 					...
@@ -84,6 +84,15 @@
 
 		<!-- Event summary Section  -->
 		<section id="eventSummary" class="section-padding bg-lgray">
+			<div class="container">
+				<div class="row">
+					...
+				</div>
+			</div>
+		</section>
+
+		<!-- Call for papers Section  -->
+		<section id="openCall" class="section-padding bg-yellow">
 			<div class="container">
 				<div class="row">
 					...
@@ -101,7 +110,7 @@
 		</section>
 
 		<!-- Call to action Section  -->
-		<section id="cta" class="section-padding bg-ai-blue">
+		<section id="cta" class="section-padding bg-ai-green">
 			<div class="container">
 				<div class="row">
 					...

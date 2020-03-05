@@ -1,4 +1,4 @@
-<footer class="bg-ai-dblue text-white">
+<footer class="bg-ai-dgreen text-white">
 	<div class="container">
 		<div class="row section-padding-bottom">
 		

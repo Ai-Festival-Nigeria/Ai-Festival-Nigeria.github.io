@@ -134,14 +134,17 @@ select.form-control {
 
 /* Backgrounds */
 
-.bg-ai-blue {
-	background: #011435;
+.bg-ai-green {
+	background: #012935;
 }
-.bg-ai-dblue {
-	background: #01112C;
+.bg-ai-dgreen {
+	background: #01202C;
 }
 .bg-lgray {
 	background: #F8F8F8;
+}
+.bg-yellow {
+	background: #E8AB4A;
 }
 
 /* Colours */

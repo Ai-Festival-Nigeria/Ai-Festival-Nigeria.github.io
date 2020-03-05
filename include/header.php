@@ -1,4 +1,4 @@
-<nav class="navbar navbar-main navbar-expand-lg bg-ai-blue">
+<nav class="navbar navbar-main navbar-expand-lg bg-ai-green">
 	<div class="container">
 		<a class="navbar-brand" href="/">
 			<img src="img/icons/ai-fest-w.svg"/>
