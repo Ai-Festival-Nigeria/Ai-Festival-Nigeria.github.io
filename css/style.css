@@ -72,11 +72,11 @@ h1,h2,h3,h4,h5,
 
 .btn-primary {
 	background-color: white;
-	color: #011435;
+	color: #012935;
 	border: 2px solid white;
 }
 .btn-primary:hover {
-	background-color: #011435;
+	background-color: #012935;
 	border: 2px solid white;
 }
 .btn-group-lg>.btn, .btn-lg {  
