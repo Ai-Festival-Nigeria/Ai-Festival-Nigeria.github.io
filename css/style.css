@@ -32,20 +32,23 @@ a:hover {
 .title {
 	font-size: 40px;
 	text-transform: uppercase;
+	font-weight: 900;
 }
-.sub-title {
+.h3,
+h3 {
 	font-size: 20px;
-	font-weight: 700;
+	font-weight: 500;
 }
 h1,h2,h3,h4,h5,
 .h1,.h2,.h3,.h4,
 .title {
 	font-family: 'interstate', sans-serif;
-	font-weight: 900;
+	line-height: 1.05;
 }
 
 .h1, h1 {
 	font-size: 2.08rem;
+	font-weight: 900;
 }
 .h2, h2 {
 	font-size: 1.55rem;
@@ -155,6 +158,9 @@ select.form-control {
 .c-gray {
 	color: #5C5C5C;
 }
+.c-dgreen {
+	color: #01202C;
+}
 
 
 
@@ -177,7 +183,8 @@ select.form-control {
 	.title {
 		font-size: 75px;
 	}
-	.sub-title {
+	.h3,
+	h3 {
 		font-size: 22px;
 	}
 
